@@ -1,0 +1,252 @@
+
+.print-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.status-panel {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.status-panel h3 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+}
+
+.method-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.status-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-item.active {
+  border-color: #4caf50;
+  background: #f1f8f4;
+}
+
+.status-item .icon {
+  font-size: 24px;
+}
+
+.status-item .badge {
+  margin-left: auto;
+  background: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  color: #666;
+}
+
+.status-item.active .badge {
+  background: #4caf50;
+  color: white;
+}
+
+.printer-mappings {
+  margin: 30px 0;
+}
+
+.printer-mappings h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.mapping-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.mapping-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mapping-card .category {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.mapping-card .arrow {
+  font-size: 24px;
+}
+
+.mapping-card .printer {
+  flex: 1;
+  text-align: right;
+  font-size: 15px;
+}
+
+.method-selector {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  margin: 30px 0;
+}
+
+.method-selector label {
+  display: block;
+  padding: 12px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.method-selector label:hover {
+  background: #f5f5f5;
+}
+
+.method-selector input[type="radio"] {
+  margin-right: 10px;
+}
+
+.action-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-print-all {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  border: none;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(17, 153, 142, 0.4);
+  transition: all 0.3s;
+}
+
+.btn-print-all:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(17, 153, 142, 0.5);
+}
+
+.btn-print-all:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-message {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.instructions {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 40px 0;
+}
+
+.instructions h3 {
+  color: #856404;
+  margin: 0 0 20px 0;
+}
+
+.tab-content h4 {
+  color: #856404;
+  margin: 20px 0 10px 0;
+  padding-top: 15px;
+  border-top: 1px solid #ffc107;
+}
+
+.tab-content h4:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.tab-content ol {
+  color: #856404;
+  padding-left: 20px;
+}
+
+.tab-content li {
+  margin: 8px 0;
+}
+
+.tab-content ul {
+  margin-top: 8px;
+}
+
+.data-preview {
+  margin-top: 40px;
+}
+
+.data-preview h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.preview-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.preview-card h4 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 14px;
+}
+
+.preview-card p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 13px;
+}
