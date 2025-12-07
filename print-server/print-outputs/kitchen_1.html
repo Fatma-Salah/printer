@@ -1,1 +1,32 @@
-<h2>KITCHEN ORDER</h2><p>Order #: 1</p><p>Table #: 5</p><ul><li> Burger x2 - $12.5</li><!--container--><!--ng-container--><li> Burger x2 - $12.5</li><!--container--><!--ng-container--><li> Burger x2 - $12.5</li><!--container--><!--ng-container--><li> Burger x2 - $12.5</li><!--container--><!--ng-container--><!--container--><!--ng-container--><!--container--></ul><p>Total: $31</p>
+
+┌─────────────────────┐
+│   Deployed Website  │
+│  https://mydomain.com│
+│ (Angular / React)   │
+└─────────┬───────────┘
+          │ HTTP request to print
+          ▼
+┌─────────────────────┐   ┌───────────────────────┐
+│   Client Browser    │   │   Local Node.js Print  │
+│   (Chrome, Edge)    │──▶│   Agent on PC         │
+│  Running web app    │   │  http://localhost:3000│
+└─────────┬───────────┘   └─────────┬─────────────┘
+          │                      │
+          │                      │
+          │ User clicks "Print"   │ Node.js receives request
+          ▼                      ▼
+      Sends order + design    Formats content & sends to
+      via POST /api/print     the actual printer
+          │                      │
+          ▼                      ▼
+      Waits for response       Returns success/error
+      from Node.js             to browser
+          │
+          ▼
+      Shows print status
+      to user
+
+
+
+      ////////////////link///////////
+      https://chatgpt.com/share/6935eab0-8064-8007-805b-b4c0ec557643
