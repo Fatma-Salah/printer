@@ -1,3 +1,40 @@
- <button (click)="printReport()" class="btn btn-primary">
-  Print Report on All Printers
-</button>
+<div id="kitchenDesign">
+  <h2>KITCHEN ORDER</h2>
+  <p>Order #: {{order.orderNumber}}</p>
+  <p>Table #: {{order.tableNumber}}</p>
+  <ul>
+    <ng-container *ngFor="let item of order.items" >
+      @if(item.category=='kitchen'){
+<li>
+      {{item.name}} x{{item.quantity}} - ${{item.price}}</li>
+      }
+    </ng-container>
+  </ul>
+  <p>Total: ${{order.total}}</p>
+</div>
+
+<div id="barDesign">
+  <h2>BAR ORDER</h2>
+  <p>Order #: {{order.orderNumber}}</p>
+  <ul>
+    <ng-container *ngFor="let item of order.items" >
+      @if(item.category=='bar'){
+<li>
+      {{item.name}} x{{item.quantity}} - ${{item.price}}</li>
+      }
+    </ng-container>
+  </ul>
+</div>
+
+<div id="receiptDesign">
+  <h2>RECEIPT</h2>
+  <p>Order #: {{order.orderNumber}}</p>
+  <ul>
+    <li *ngFor="let item of order.items">
+      {{item.name}} x{{item.quantity}} - ${{item.price}}
+    </li>
+  </ul>
+  <p>Total: ${{order.total}}</p>
+</div>
+
+<button (click)="print()">Print</button>

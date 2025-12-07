@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Printer } from "./printer/printer/printer";
+import { PrinterComponent } from './printer/printer/printer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Printer],
+  imports: [RouterOutlet, PrinterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

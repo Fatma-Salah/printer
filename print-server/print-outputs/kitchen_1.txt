@@ -1,0 +1,6 @@
+*** KITCHEN ORDER ***
+Order #: 1
+Table #: 1
+Items for kitchen:
+  1. Burger x2
+

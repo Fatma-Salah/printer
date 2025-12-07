@@ -1,0 +1,5 @@
+*** BAR ORDER ***
+Order #: 1
+Items for bar:
+  1. Coke x2
+
